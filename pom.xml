@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>de.tauiotamy</groupId>
+    <artifactId>versoins-parent</artifactId>
+    <version>0.1-SNAPSHOT</version>
+    <name>Parent POM to manage 3rd party dependencies</name>
+    <packaging>pom</packaging>
+
+    <properties>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>3.11</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <distributionManagement>
+        <repository>
+            <id>tauitoamy</id>
+            <url>http://repository.tauiotamy.de/releases</url>
+        </repository>
+        <snapshotRepository>
+            <id>tauitoamy</id>
+            <url>http://repository.tauiotamy.de/snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+</project>

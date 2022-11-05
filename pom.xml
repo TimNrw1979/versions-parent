@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>de.tauiotamy</groupId>
-    <artifactId>versoins-parent</artifactId>
+    <artifactId>versions-parent</artifactId>
     <version>0.1-SNAPSHOT</version>
     <name>Parent POM to manage 3rd party dependencies</name>
     <packaging>pom</packaging>
@@ -50,11 +50,11 @@
     <distributionManagement>
         <repository>
             <id>tauitoamy</id>
-            <url>http://repository.tauiotamy.de/releases</url>
+            <url>https://repository.tauiotamy.de/releases</url>
         </repository>
         <snapshotRepository>
             <id>tauitoamy</id>
-            <url>http://repository.tauiotamy.de/snapshots</url>
+            <url>https://repository.tauiotamy.de/snapshots</url>
         </snapshotRepository>
     </distributionManagement>
 

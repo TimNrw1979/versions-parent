@@ -14,6 +14,7 @@
 		<maven.compiler.source>19</maven.compiler.source>
 		<spring.boot.version>3.0.0</spring.boot.version>
 		<log4j2.version>2.19.0</log4j2.version>
+		<joinfaces.version>5.0.0</joinfaces.version>
 	</properties>
 
 	<dependencyManagement>
@@ -127,6 +128,16 @@
 				<version>${spring.boot.version}</version>
 			</dependency>
 			<dependency>
+				<groupId>org.springframework.security</groupId>
+				<artifactId>spring-security-oauth2-client</artifactId>
+				<version>6.0.0</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.security</groupId>
+				<artifactId>spring-security-oauth2-jose</artifactId>
+				<version>6.0.0</version>
+			</dependency>
+			<dependency>
 				<groupId>org.springframework.data</groupId>
 				<artifactId>spring-data-rest-webmvc</artifactId>
 				<version>4.0.0</version>
@@ -147,10 +158,11 @@
 			<!-- JSF -->
 			<dependency>
 				<groupId>org.joinfaces</groupId>
-				<artifactId>primefaces-spring-boot-starter</artifactId>
-				<version>4.7.6</version>
+				<artifactId>joinfaces-dependencies</artifactId>
+				<version>${joinfaces.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
 			</dependency>
-
 		</dependencies>
 	</dependencyManagement>
 

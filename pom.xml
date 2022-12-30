@@ -13,6 +13,8 @@
 		<maven.compiler.target>19</maven.compiler.target>
 		<maven.compiler.source>19</maven.compiler.source>
 		<spring.boot.version>3.0.0</spring.boot.version>
+		<spring.security.oauth2.version>6.0.0</spring.security.oauth2.version>
+		<thymeleaf.extra.version>3.1.1.RELEASE</thymeleaf.extra.version>
 		<log4j2.version>2.19.0</log4j2.version>
 		<joinfaces.version>5.0.0</joinfaces.version>
 	</properties>
@@ -130,18 +132,36 @@
 			<dependency>
 				<groupId>org.springframework.security</groupId>
 				<artifactId>spring-security-oauth2-client</artifactId>
-				<version>6.0.0</version>
+				<version>${spring.security.oauth2.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.springframework.security</groupId>
 				<artifactId>spring-security-oauth2-jose</artifactId>
-				<version>6.0.0</version>
+				<version>${spring.security.oauth2.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.springframework.data</groupId>
 				<artifactId>spring-data-rest-webmvc</artifactId>
 				<version>4.0.0</version>
 			</dependency>
+
+			<!-- Thymeleaf -->
+			<dependency>
+				<groupId>org.thymeleaf.extras</groupId>
+				<artifactId>thymeleaf-extras-springsecurity5</artifactId>
+				<version>${thymeleaf.extra.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.thymeleaf.extras</groupId>
+				<artifactId>thymeleaf-extras-springsecurity6</artifactId>
+				<version>${thymeleaf.extra.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.thymeleaf</groupId>
+				<artifactId>thymeleaf-spring5</artifactId>
+				<version>${thymeleaf.extra.version}</version>
+			</dependency>
+
 
 			<!-- Database -->
 			<dependency>
